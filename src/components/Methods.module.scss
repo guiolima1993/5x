@@ -1,0 +1,318 @@
+.methodsSection {
+  padding: 4rem 6rem;
+  background-color: #040311;
+  background-image: url('/image/elipsecolor.webp');
+  background-size: 1500px;
+  background-position: right -600px top -800px;
+  background-repeat: no-repeat;
+
+  .methodList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    align-items: center;
+
+    .list {
+      width: 50%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #fff;
+      }
+
+      .listItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 1rem;
+        }
+
+        .description {
+          flex-grow: 1;
+          font-size: 1rem;
+          color: #B2C4E7;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .imageWrapper {
+      width: 50%;
+      text-align: right;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        filter: drop-shadow(10px 10px 40px black);
+      }
+    }
+  }
+
+  .sectionDescription {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    max-width: 47%;
+    margin: 2rem auto;
+    font-weight: bold;
+    line-height: 140%;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-image: url('/image/elipsecolor.webp');
+    background-size: 1500px;
+    background-position: left -100px center;
+    background-repeat: no-repeat;
+
+    .card {
+      width: 80%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin: 1rem auto;
+      gap: 2rem;
+      padding: 3rem 0;
+
+      .cardFill {
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 40%;
+        object-fit: cover;
+      }
+
+      .cardContent {
+        padding: 1rem;
+        width: 60%;
+
+        h3 {
+          margin: 0 0 1rem;
+          font-size: 1.5rem;
+          color: #fff;
+          font-weight: normal;
+          letter-spacing: 1px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1rem;
+          color: #B2C4E7;
+          font-weight: 200;
+          letter-spacing: 1px;
+          line-height: 140%;
+        }
+
+        .bgPrice {
+          background-color: #14141C;
+          padding: 10px 20px;
+          width: fit-content;
+          border-radius: 3px;
+          margin-top: 1rem;
+
+          .price {
+            font-weight: 200;
+            color: #fff;
+            letter-spacing: 1px;
+            position: relative;
+
+            &::after {
+              content: '';
+              width: 100%;
+              height: 1.5px;
+              background-color: #FF0000;
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%) rotate(-4deg);
+            }
+          }
+        }
+      }
+
+      &.cardMiddle {
+        border-top: 5px dashed #303257;
+        border-bottom: 5px dashed #303257;
+        padding: 5rem 0;
+      }
+    }
+  }
+
+  .call {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #37C845;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1.3rem 2rem;
+    letter-spacing: 1px;
+  }
+
+  .bookDisplay {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    align-items: center;
+    margin: 8rem auto 2rem auto;
+
+    .bookText {
+      width: 48%;
+
+      h6 {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-weight: 200;
+        margin-bottom: 1rem;
+        color: #B2C4E7;
+        line-height: 140%;
+      }
+
+      .mb {
+        margin-bottom: 3rem;
+      }
+
+      .price {
+        color: #fff;
+        font-weight: 200;
+        position: relative;
+        width: fit-content;
+
+        &:after {
+          content: "";
+          width: 100%;
+          height: 1.5px;
+          background-color: red;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(-5deg);
+          z-index: 11;
+        }
+      }
+
+      .lastTitle {
+        font-size: 2.3rem;
+      }
+    }
+
+    .bookImg {
+      width: 52%;
+
+      img {
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .lastImg {
+        max-width: 80%;
+        margin: 0;
+        float: inline-end !important;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 2rem 20px;
+
+    .methodList {
+      flex-direction: column-reverse;
+      margin-bottom: 2rem;
+
+      .list {
+        width: 100%;
+      }
+    }
+
+    .imageWrapper {
+      width: 100% !important;
+    }
+
+    .sectionDescription {
+      max-width: 100%;
+      font-size: 1.3rem !important;
+      margin-top: 0;
+    }
+
+    .cardsContainer {
+      background-size: 585px;
+
+      .card {
+        width: 100%;
+        padding: 2rem 0 !important;
+
+        .cardFill {
+          max-width: 100%;
+          flex-direction: column;
+
+          img {
+            width: 65%;
+            margin-bottom: 1.5rem;
+          }
+
+          .cardContent {
+            width: 100%;
+            text-align: center;
+
+            h3 {
+              font-size: 1.3rem;
+              line-height: 140%;
+            }
+          }
+
+          .bgPrice {
+            margin: 1rem auto 0 auto;
+          }
+        }
+      }
+    }
+
+    .bookDisplay {
+      flex-direction: column-reverse;
+      max-width: 100%;
+      margin: 2rem auto;
+      gap: 2rem;
+
+      .bookImg {
+        width: 100%;
+      }
+
+      .bookText {
+        width: 100%;
+
+        .lastTitle {
+          font-size: 1.4rem;
+        }
+      }
+
+      .bookImg {
+        .lastImg {
+          margin: 0 auto;
+          float: none !important;
+        }
+      }
+    } 
+  }
+}

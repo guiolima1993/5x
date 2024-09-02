@@ -1,0 +1,91 @@
+.ctaSection {
+  background-color: #0F1023;
+  padding: 4rem 0;
+  background-image: url('/image/bg-ctalist.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  border-top: 1px solid #303257;
+  border-bottom: 1px solid #303257;
+}
+
+.ctaContent {
+  width: 100%;
+  max-width: 35%;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: .5rem;
+  border-radius: 8px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-bottom: 4px solid transparent; 
+  border-image: linear-gradient(to right, #007BFF, rgba(0, 123, 255, 0)) 1;
+  padding-bottom: 2rem;
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 100%;
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #B2C4E7;
+}
+
+@media (max-width: 800px) {
+  .ctaSection {
+    padding: 4rem 0 2rem 0;
+    background-size: 270px;
+  }
+
+  .ctaContent {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    line-height: 140%;
+    margin-bottom: 2rem;
+  }
+
+  .listItem {
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    max-width: 20px;
+  }
+
+  .text {
+    font-size: .8rem;
+  }
+}
+
