@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ text, imageUrl }) => {
-  const fixedLink = "https://pay.hotmart.com/B94505524F"; 
+  const fixedLink = "https://pay.hotmart.com/B94505524F?checkoutMode=10"; 
 
   return (
     <div className={styles.container}>
